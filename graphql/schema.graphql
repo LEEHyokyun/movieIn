@@ -1,4 +1,5 @@
 type Person {
+    id : Int!
     name : String!
     age: Int!
     gender : String!
@@ -6,5 +7,5 @@ type Person {
 
 type Query {
     people : [Person]!
-    Person(id: Int!) : Person
+    person(id: Int!) : Person
 }
