@@ -1,29 +1,28 @@
-export const people = [
+export let movie = [
     {
         id : 1,
-        name : "LEE",
-        age: 15,
-        gender : "male"
+        title : "Fly to the sky",
+        score: 8,
     }, 
     {
         id : 2,
-        name : "KIM",
-        age: 21,
-        gender : "female"
+        title : "Road to Busan",
+        score: 7,
     },
     {
         id : 3,
-        name : "LIM",
-        age: 27,
-        gender : "female"
+        title : "Three idiots",
+        score: 9,
     }
 
 ]
 
 export const getById = id => {
     //filter returns array
-    const filteredPeople = people.filter((people) => id === people.id);
+    const filteredMovie = movie.filter((movie) => id === movie.id);
     //filtered data = return array's index 0
-    console.log(filteredPeople)
-    return filteredPeople[0]
+    console.log(filteredMovie)
+    return filteredMovie[0]
 }
+
+export const getmovie = () => movie
