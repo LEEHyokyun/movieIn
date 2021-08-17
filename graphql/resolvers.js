@@ -1,12 +1,25 @@
-const LEE = {
-    name : "Hyokyun",
-    age : 15,
-    gender : "male"
-}
+const people = [
+    {
+        name : "LEE",
+        age: 15,
+        gender : "male"
+    }, 
+    {
+        name : "KIM",
+        age: 21,
+        gender : "female"
+    },
+    {
+        name : "LIM",
+        age: 27,
+        gender : "female"
+    }
+
+]
 
 const resolvers = {
     Query: {
-        person: () => LEE
+        people : () => people
     }
 }
 
