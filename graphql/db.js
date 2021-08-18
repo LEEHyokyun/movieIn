@@ -26,3 +26,14 @@ export const getById = id => {
 }
 
 export const getmovie = () => movie
+
+export const addmovie = (title, score) => {
+    const newmovie = {
+        id : movie.length + 1,
+        title,
+        score
+    }
+    movie.push(newmovie)
+    console.log(movie)
+    return movie
+}
