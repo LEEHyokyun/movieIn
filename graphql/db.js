@@ -37,3 +37,15 @@ export const addmovie = (title, score) => {
     console.log(movie)
     return movie
 }
+
+export const deletemovie = (id) => {
+    const deletedmovie = movie.filter(movie => movie.id !== id)
+        if(deletedmovie.length < movie.length){
+            //This movie instance is real one, not virtual instance
+            movie = deletedmovie
+            console.log(deletedmovie)
+            return true
+        }else{
+            return false
+        }
+    }
